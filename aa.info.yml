@@ -1,0 +1,5 @@
+name: AlexAnisimov
+description: Alex Anisimov introduction module
+package: Custom
+type: module
+core: 8.x

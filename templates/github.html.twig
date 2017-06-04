@@ -1,0 +1,9 @@
+<div>
+    {% for repo in repositories %}
+    <div style="display: inline-block;margin: 15px 0;width:90%;">
+        <a href="{{ repo.html_url }}">{{ repo.name }}</a>{% if repo.description %} ({{ repo.description }}){% endif %}
+        <br>
+        Checkout: {{ repo.git_url }} | {{ repo.ssh_url }}
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,23 @@
+aa.index:
+  path: /aa
+  defaults:
+    _controller: '\Drupal\aa\Controller\AaController::content'
+    _title: Alex Anisimov introduction
+  requirements:
+    _permission: 'access content'
+
+aa.github:
+  path: /aa/github
+  defaults:
+    _controller: '\Drupal\aa\Controller\AaController::github'
+    _title: AA github repos list
+  requirements:
+    _permission: 'access content'
+
+aa.projects:
+  path: /aa/projects
+  defaults:
+    _controller: '\Drupal\aa\Controller\AaController::projects'
+    _title: AA projects
+  requirements:
+    _permission: 'access content'

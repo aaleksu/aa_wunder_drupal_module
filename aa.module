@@ -1,0 +1,29 @@
+<?php
+
+function aa_theme($existing, $type, $theme, $path)
+{
+    return [
+        'index' => [
+            'variables' => [],
+            'template' => 'index',
+        ],
+        'github' => [
+            'variables' => [
+                'repositories' => [],
+            ],
+            'template' => 'github',
+        ],
+        'projects' => [
+            'variables' => [
+                'projects' => [],
+            ],
+            'template' => 'projects',
+        ],
+        'error' => [
+            'variables' => [
+                'message' => null,
+            ],
+            'template' => 'error'
+        ],
+    ];
+}
